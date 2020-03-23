@@ -11,6 +11,7 @@ public class ConfigPanel extends JPanel{
     private JTextArea sides;
     private JTextArea shape;
     private JTextArea stroke;
+    private JTextArea size;
 
     public ConfigPanel(DrawingPanel canvas){
         this.myCanvas=canvas;
@@ -75,5 +76,20 @@ public class ConfigPanel extends JPanel{
         add(label);
         add(shape);
 
+    }
+    
+    private void addSize() {
+        JLabel label = new JLabel("Size");
+
+        stroke = new JTextArea(1,10);
+     
+        Font font = new Font(
+                Font.MONOSPACED,
+                Font.PLAIN,
+                stroke.getFont().getSize());
+        stroke.setFont(font);
+
+        add(label);
+        add(size);
     }
 }

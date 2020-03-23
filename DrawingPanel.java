@@ -63,6 +63,8 @@ public class DrawingPanel extends JPanel {
         canvas.setStroke(dashed);
 
     }
+    
+    
 
     public void reset() {
         this.sides=0;
